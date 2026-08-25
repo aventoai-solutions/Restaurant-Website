@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
+import logoMark from "../assets/logo-mark.png";
+
 const nav = [
   { to: "/menu", label: "Menu" },
   { to: "/about", label: "The House" },
