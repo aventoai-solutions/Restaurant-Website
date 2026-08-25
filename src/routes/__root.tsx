@@ -139,6 +139,8 @@ function RootComponent() {
         <Outlet />
       </main>
       <SiteFooter />
+      <Toaster />
+
     </QueryClientProvider>
 
   );
