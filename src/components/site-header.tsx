@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
+import logoMark from "../assets/logo-mark.png";
+
 const nav = [
   { to: "/menu", label: "Menu" },
   { to: "/about", label: "The House" },
@@ -26,11 +28,20 @@ export function SiteHeader() {
       }`}
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
-        <Link to="/" className="min-w-0">
-          <span className="block font-display text-xl leading-none tracking-[0.28em] text-foreground">
-            MAISON
+        <Link to="/" className="flex min-w-0 items-center gap-3">
+          <img
+            src={logoMark}
+            alt="Maison Noir monogram"
+            width={40}
+            height={40}
+            className="h-9 w-9 shrink-0 rounded-full object-cover"
+          />
+          <span className="min-w-0">
+            <span className="block font-display text-xl leading-none tracking-[0.28em] text-foreground">
+              MAISON
+            </span>
+            <span className="eyebrow block leading-none">Noir · Est. 1998</span>
           </span>
-          <span className="eyebrow block leading-none">Noir · Est. 1998</span>
         </Link>
 
         <nav className="flex shrink-0 items-center gap-6 sm:gap-9">
